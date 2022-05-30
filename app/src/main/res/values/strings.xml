@@ -1,16 +1,16 @@
 <resources>
-	<string name="app_name">OddsMovie</string>
-	<string name="username">username</string>
-	<string name="password">password</string>
-	<string name="netflix">netflix</string>
-	<string name="dummy_description">After the devastating events of the Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos’ actions and restore balance to the universe.</string>
-	<string name="my_list">My List</string>
-	<string name="rate">Rate</string>
-	<string name="share">Share</string>
-	<string name="movie_image_content_description">Movie Image</string>
-	<string name="download">Download</string>
-	<string name="play">Play</string>
-	<string name="duration">%d minutes</string>
-	<string name="close_button">Close button</string>
-	<string name="greeting">Hey! %s</string>
+    <string name="app_name">OddsMovie</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="netflix">netflix</string>
+    <string name="dummy_description">After the devastating events of the Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos’ actions and restore balance to the universe.</string>
+    <string name="my_list">My List</string>
+    <string name="rate">Rate</string>
+    <string name="share">Share</string>
+    <string name="movie_image_content_description">Movie Image</string>
+    <string name="download">Download</string>
+    <string name="play">Play</string>
+    <string name="duration">%d minutes</string>
+    <string name="close_button">Close button</string>
+    <string name="greeting">Hey! %s</string>
 </resources>
