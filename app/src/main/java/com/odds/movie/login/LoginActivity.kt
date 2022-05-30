@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import com.odds.movie.HomeMovieActivity
 import com.odds.movie.movie.MovieActivity
 import com.odds.movie.databinding.ActivityLoginBinding
 import com.odds.movie.delay
@@ -31,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
 
 	private fun login(user: User) {
 		if (user.username == "admin" && user.password == "admin") {
-			val intent = Intent(this, MovieActivity::class.java)
+			val intent = Intent(this, HomeMovieActivity::class.java)
 			intent.putExtra(MovieActivity.EXTRA_USER, user)
 			startActivity(intent)
 		} else {

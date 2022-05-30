@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OddsMovie">
         <activity
+            android:name=".HomeMovieActivity"
+            android:exported="false" />
+        <activity
             android:name=".movie.MovieActivity"
             android:exported="false" />
         <activity
