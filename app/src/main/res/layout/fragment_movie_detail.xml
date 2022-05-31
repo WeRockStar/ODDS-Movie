@@ -102,7 +102,7 @@
             app:layout_constraintTop_toBottomOf="@+id/materialButton" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvDescription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -121,8 +121,8 @@
             android:text="@string/my_list"
             app:icon="@drawable/ic_add"
             app:iconGravity="top"
-            app:layout_constraintStart_toStartOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintStart_toStartOf="@+id/tvDescription"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonRate"
@@ -134,7 +134,7 @@
             app:icon="@drawable/ic_thumb_up"
             app:iconGravity="top"
             app:layout_constraintStart_toEndOf="@+id/buttonMyList"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonShare"
@@ -146,7 +146,7 @@
             app:icon="@drawable/ic_share"
             app:iconGravity="top"
             app:layout_constraintStart_toEndOf="@+id/buttonRate"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -4,6 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
+import com.odds.movie.R
 import com.odds.movie.databinding.MovieItemRowBinding
 
 class HomeMovieAdapter(
@@ -18,7 +22,12 @@ class HomeMovieAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(movie: Movie, onClickMovie: (Movie) -> Unit) {
-            binding.imageMovie.setImageResource(movie.image)
+            Glide.with(binding.imageMovie)
+                .load(movie.image)
+                .error(R.drawable.endgame)
+                .transition(withCrossFade())
+                .into(binding.imageMovie)
+
             binding.tvMovieName.text = movie.name
             binding.root.setOnClickListener { onClickMovie(movie) }
         }
