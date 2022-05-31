@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_navigation"
+    app:startDestination="@id/homeMovieFragment">
+
+    <fragment
+        android:id="@+id/homeMovieFragment"
+        android:name="com.odds.movie.movie.HomeMovieFragment"
+        android:label="fragment_home_movie"
+        tools:layout="@layout/fragment_home_movie" >
+        <action
+            android:id="@+id/action_homeMovieFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_homeMovieFragment_to_movieDetailFragment"
+        app:destination="@id/movieDetailFragment" />
+
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.odds.movie.movie.MovieDetailFragment"
+        android:label="MovieDetailFragment"
+        tools:layout="@layout/fragment_movie_detail"/>
+</navigation>

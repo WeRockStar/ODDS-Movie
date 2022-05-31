@@ -13,4 +13,7 @@
     <string name="duration">%d minutes</string>
     <string name="close_button">Close button</string>
     <string name="greeting">Hey! %s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

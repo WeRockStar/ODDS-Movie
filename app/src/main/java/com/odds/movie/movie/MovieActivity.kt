@@ -2,6 +2,9 @@ package com.odds.movie.movie
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavHost
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import com.odds.movie.R
 import com.odds.movie.databinding.ActivityMovieBinding
 import com.odds.movie.login.User
@@ -14,18 +17,9 @@ class MovieActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        bind()
-    }
-
-    private fun bind() {
-        val user = intent.getParcelableExtra<User>(EXTRA_USER)
-        val movie = intent.getParcelableExtra<Movie>(EXTRA_MOVIE)
-        with(binding) {
-            tvMovieName.text = movie?.name.orEmpty()
-            tvDuration.text = getString(R.string.duration).format(movie?.duration)
-            tvGreeting.text = getString(R.string.greeting).format(user?.username.orEmpty())
-            imageView.setImageResource(movie?.image ?: R.drawable.endgame)
-        }
+        val nav = supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment
+        val navController = nav.navController
+        navController.setGraph(R.navigation.movie_navigation, intent.extras)
     }
 
     companion object {
